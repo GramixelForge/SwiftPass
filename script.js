@@ -16,7 +16,7 @@ document.getElementById('passForm').addEventListener('submit', function(e) {
         <h2>Salida en ${transport}</h2>
         <p><strong>Nombre del alumno:</strong> ${name}</p>
         <p><strong>Grado:</strong> ${grade}</p>
-        <p><strong>Irà en:</strong> ${transport}</p><p><strong> Horario:</strong> ${time}</p><p><strong> Texto enviado:</strong> ${message}</p>
+        <p><strong>Irà en ${transport}:</strong></p><p><strong> Horario:</strong> ${time}</p><p><strong> Texto enviado:</strong> ${message}</p>
         <p><strong>Persona que retira:</strong> ${guardian}</p><p><strong> Identificación:</strong> ${identif}</p><p><strong> Puerta:</strong> Puerta ${door}</p>
     `;
 
