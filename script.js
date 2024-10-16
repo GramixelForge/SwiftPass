@@ -8,15 +8,16 @@ document.getElementById('passForm').addEventListener('submit', function(e) {
     const message = document.getElementById('message').value;
     const guardian = document.getElementById('guardian').value;
     const door = document.getElementById('door').value;
+    const time = document.getElementById('time').value;
+    const identif = Math.floor(100000000 + Math.random() * 900000000);
 
     // Generate the pass
     const passContent = `
         <h2>Salida en ${transport}</h2>
         <p><strong>Nombre del alumno:</strong> ${name}</p>
         <p><strong>Grado:</strong> ${grade}</p>
-        <p><strong>Texto enviado:</strong> ${message}</p>
-        <p><strong>Que retira:</strong> ${guardian}</p>
-        <p><strong>Puerta:</strong> Puerta ${door}</p>
+        <p><strong>Irà en:</strong> ${transport}</p><p><strong> Horario:</strong> ${time}</p><p><strong> Texto enviado:</strong> ${message}</p>
+        <p><strong>Persona que retira:</strong> ${guardian}</p><p><strong> Identificación:</strong> ${identif}</p><p><strong> Puerta:</strong> Puerta ${door}</p>
     `;
 
     document.getElementById('generatedPass').style.display = 'block';
